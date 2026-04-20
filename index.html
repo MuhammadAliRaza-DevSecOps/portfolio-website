@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ali Raza | DevSecOps Engineer & Cybersecurity</title>
+  <meta name="description" content="Ali Raza - DevSecOps Engineer, Cybersecurity Enthusiast, Cloud & Automation. CS Student targeting top global companies."/>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ==================== CANVAS BACKGROUND ==================== -->
+<canvas id="bgCanvas"></canvas>
+
+<!-- ==================== CURSOR ==================== -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- ==================== NAVBAR ==================== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-brand">
+    <span class="brand-bracket">&lt;</span>
+    <span class="brand-name">Ali<span class="brand-accent">Raza</span></span>
+    <span class="brand-bracket">/&gt;</span>
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#hero" class="nav-link active">Home</a></li>
+    <li><a href="#about" class="nav-link">About</a></li>
+    <li><a href="#skills" class="nav-link">Skills</a></li>
+    <li><a href="#projects" class="nav-link">Projects</a></li>
+    <li><a href="#timeline" class="nav-link">Journey</a></li>
+    <li><a href="#education" class="nav-link">Education</a></li>
+    <li><a href="#certifications" class="nav-link">Certs</a></li>
+    <li><a href="#cv" class="nav-link">CV</a></li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ==================== HERO ==================== -->
+<section class="hero" id="hero">
+  <div class="hero-grid">
+    <!-- Left: text -->
+    <div class="hero-text">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>Available for Opportunities</span>
+      </div>
+      <h1 class="hero-name">
+        <span class="name-line">Ali</span>
+        <span class="name-line accent-glow">Raza</span>
+      </h1>
+      <div class="hero-typed-wrapper">
+        <span class="typed-prefix">&gt;_</span>
+        <span id="typedText" class="typed-text"></span>
+        <span class="typed-cursor">|</span>
+      </div>
+      <p class="hero-bio">
+        CS student building systems that don't just run — they <em>monitor, detect, automate, and respond</em>. Targeting top global roles in DevSecOps, Cybersecurity, and Cloud.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-code"></i> View Projects</a>
+        <a href="#cv" class="btn btn-glass"><i class="fa-solid fa-file-lines"></i> View CV</a>
+        <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-paper-plane"></i> Contact</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/MuhammadAliRaza-DevSecOps" target="_blank" class="social-icon" title="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ali-raza-0b9b52228" target="_blank" class="social-icon" title="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:infoman55.it@gmail.com" class="social-icon" title="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Right: 3D card -->
+    <div class="hero-card-wrapper">
+      <div class="hero-3d-card" id="heroCard">
+        <div class="card-inner">
+          <div class="card-avatar">
+            <div class="avatar-ring"></div>
+            <div class="avatar-core">AR</div>
+            <div class="avatar-orbit orbit-1"></div>
+            <div class="avatar-orbit orbit-2"></div>
+          </div>
+          <div class="card-info">
+            <h3>Ali Raza</h3>
+            <p>DevSecOps | Cybersecurity</p>
+            <p>Lahore, Pakistan <i class="fa-solid fa-location-dot"></i></p>
+          </div>
+          <div class="card-badges">
+            <span class="cb docker"><i class="fa-brands fa-docker"></i> Docker</span>
+            <span class="cb aws"><i class="fa-brands fa-aws"></i> AWS</span>
+            <span class="cb python"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="cb linux"><i class="fa-brands fa-linux"></i> Linux</span>
+            <span class="cb security"><i class="fa-solid fa-shield-halved"></i> Security</span>
+            <span class="cb k8s"><i class="fa-solid fa-dharmachakra"></i> K8s</span>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+      </div>
+      <!-- Floating particles around card -->
+      <div class="float-particle p1"></div>
+      <div class="float-particle p2"></div>
+      <div class="float-particle p3"></div>
+      <div class="float-particle p4"></div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="scroll-indicator">
+    <div class="scroll-wheel"></div>
+    <span>Scroll Down</span>
+  </div>
+</section>
+
+<!-- ==================== ABOUT ==================== -->
+<section class="section about-section" id="about">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">// 01. about</span>
+      <h2 class="section-title">About <span class="accent">Me</span></h2>
+      <div class="title-line"></div>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text" data-aos="fade-right" data-aos-delay="100">
+        <p>I'm a <strong>Computer Science student</strong> at NCBA&E with a CGPA of 3.85/4.00, deeply passionate about building secure, scalable, and automated systems. I specialize in the intersection of <strong>DevSecOps, Cybersecurity, and Cloud Engineering</strong>.</p>
+        <p>My approach: build systems that don't just function — they <em>monitor threats, automate responses, and scale intelligently</em>. I'm actively working toward roles at top global companies like Google, Microsoft, and Amazon.</p>
+        <p>When not coding, I'm on <strong>TryHackMe</strong>, studying cloud architectures, or contributing to open-source security tooling.</p>
+        <div class="about-stats">
+          <div class="stat-item">
+            <span class="stat-num" data-count="12">0</span>
+            <span class="stat-label">Skills</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num" data-count="5">0</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num" data-count="5">0</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num" data-count="3">0</span>
+            <span class="stat-label">Focus Areas</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-cards" data-aos="fade-left" data-aos-delay="200">
+        <div class="about-card glass-card">
+          <div class="ac-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h4>DevSecOps</h4>
+          <p>Integrating security into every stage of the CI/CD pipeline for resilient delivery.</p>
+        </div>
+        <div class="about-card glass-card">
+          <div class="ac-icon"><i class="fa-solid fa-bug-slash"></i></div>
+          <h4>Cybersecurity</h4>
+          <p>Ethical hacking, threat modeling, and secure system architecture design.</p>
+        </div>
+        <div class="about-card glass-card">
+          <div class="ac-icon"><i class="fa-brands fa-aws"></i></div>
+          <h4>Cloud</h4>
+          <p>AWS services, containerization, orchestration, and cloud-native deployment strategies.</p>
+        </div>
+        <div class="about-card glass-card">
+          <div class="ac-icon"><i class="fa-solid fa-robot"></i></div>
+          <h4>Automation</h4>
+          <p>Python scripting, Django APIs, and infrastructure-as-code for intelligent automation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SKILLS ==================== -->
+<section class="section skills-section" id="skills">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">// 02. skills</span>
+      <h2 class="section-title">Technical <span class="accent">Arsenal</span></h2>
+      <div class="title-line"></div>
+    </div>
+
+    <div class="skills-grid">
+      <!-- Skill bars -->
+      <div class="skills-bars" data-aos="fade-right" data-aos-delay="100">
+        <div class="skill-item">
+          <div class="skill-meta">
+            <span><i class="fa-solid fa-shield-halved"></i> DevSecOps</span>
+            <span>85%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta">
+            <span><i class="fa-solid fa-lock"></i> Cybersecurity</span>
+            <span>80%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta">
+            <span><i class="fa-solid fa-network-wired"></i> Networking</span>
+            <span>75%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta">
+            <span><i class="fa-brands fa-docker"></i> Docker</span>
+            <span>88%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta">
+            <span><i class="fa-solid fa-dharmachakra"></i> Kubernetes</span>
+            <span>70%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta">
+            <span><i class="fa-brands fa-aws"></i> AWS</span>
+            <span>75%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+      </div>
+
+      <div class="skills-bars" data-aos="fade-left" data-aos-delay="200">
+        <div class="skill-item">
+          <div class="skill-meta">
+            <span><i class="fa-brands fa-python"></i> Python</span>
+            <span>90%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta">
+            <span><i class="fa-solid fa-leaf"></i> Django</span>
+            <span>82%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta">
+            <span><i class="fa-brands fa-html5"></i> HTML/CSS/JS</span>
+            <span>85%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta">
+            <span><i class="fa-solid fa-c"></i> C / C++</span>
+            <span>70%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta">
+            <span><i class="fa-brands fa-linux"></i> Linux</span>
+            <span>88%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta">
+            <span><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+            <span>92%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skill icon cloud -->
+    <div class="skills-icons" data-aos="fade-up" data-aos-delay="300">
+      <div class="skill-badge"><i class="fa-brands fa-python"></i><span>Python</span></div>
+      <div class="skill-badge"><i class="fa-brands fa-docker"></i><span>Docker</span></div>
+      <div class="skill-badge"><i class="fa-brands fa-aws"></i><span>AWS</span></div>
+      <div class="skill-badge"><i class="fa-brands fa-linux"></i><span>Linux</span></div>
+      <div class="skill-badge"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+      <div class="skill-badge"><i class="fa-solid fa-dharmachakra"></i><span>K8s</span></div>
+      <div class="skill-badge"><i class="fa-solid fa-shield-halved"></i><span>Security</span></div>
+      <div class="skill-badge"><i class="fa-solid fa-cloud"></i><span>Cloud</span></div>
+      <div class="skill-badge"><i class="fa-solid fa-terminal"></i><span>Bash</span></div>
+      <div class="skill-badge"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+      <div class="skill-badge"><i class="fa-solid fa-network-wired"></i><span>Network</span></div>
+      <div class="skill-badge"><i class="fa-solid fa-robot"></i><span>Automation</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PROJECTS ==================== -->
+<section class="section projects-section" id="projects">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">// 03. projects</span>
+      <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+      <div class="title-line"></div>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="filter-btns" data-aos="fade-up" data-aos-delay="100">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="featured">Featured</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="python">Python</button>
+      <button class="filter-btn" data-filter="security">Security</button>
+    </div>
+
+    <!-- Project Cards -->
+    <div class="projects-grid" id="projectsGrid">
+
+      <div class="project-card glass-card" data-category="web featured" data-aos="fade-up" data-aos-delay="100">
+        <div class="pc-top">
+          <div class="pc-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+          <div class="pc-links">
+            <a href="https://github.com/MuhammadAliRaza-DevSecOps/shopcart-pro" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <h3 class="pc-title">Shopcart Pro</h3>
+        <p class="pc-desc">A full-featured e-commerce web application with secure checkout, product management, user authentication, and order tracking — built with modern web technologies.</p>
+        <div class="pc-tags">
+          <span>Web</span><span>E-Commerce</span><span>Full-Stack</span>
+        </div>
+        <a href="https://github.com/MuhammadAliRaza-DevSecOps/shopcart-pro" target="_blank" class="pc-btn">
+          <i class="fa-brands fa-github"></i> View on GitHub
+        </a>
+      </div>
+
+      <div class="project-card glass-card" data-category="web python featured" data-aos="fade-up" data-aos-delay="150">
+        <div class="pc-top">
+          <div class="pc-icon"><i class="fa-solid fa-database"></i></div>
+          <div class="pc-links">
+            <a href="https://github.com/MuhammadAliRaza-DevSecOps/html-js-node-mongo-app" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <h3 class="pc-title">HTML JS Node Mongo App</h3>
+        <p class="pc-desc">A full-stack MERN-inspired application demonstrating RESTful API design, MongoDB integration, and dynamic front-end rendering — showcasing full-stack engineering proficiency.</p>
+        <div class="pc-tags">
+          <span>Node.js</span><span>MongoDB</span><span>Full-Stack</span>
+        </div>
+        <a href="https://github.com/MuhammadAliRaza-DevSecOps/html-js-node-mongo-app" target="_blank" class="pc-btn">
+          <i class="fa-brands fa-github"></i> View on GitHub
+        </a>
+      </div>
+
+      <div class="project-card glass-card" data-category="security featured" data-aos="fade-up" data-aos-delay="200">
+        <div class="pc-top">
+          <div class="pc-icon"><i class="fa-solid fa-vote-yea"></i></div>
+          <div class="pc-links">
+            <a href="https://github.com/MuhammadAliRaza-DevSecOps/Decentralized-Voting-System" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <h3 class="pc-title">Decentralized Voting System</h3>
+        <p class="pc-desc">A blockchain-inspired decentralized voting platform ensuring tamper-proof, transparent elections. Implements cryptographic identity verification and immutable vote records.</p>
+        <div class="pc-tags">
+          <span>Security</span><span>Blockchain</span><span>Cryptography</span>
+        </div>
+        <a href="https://github.com/MuhammadAliRaza-DevSecOps/Decentralized-Voting-System" target="_blank" class="pc-btn">
+          <i class="fa-brands fa-github"></i> View on GitHub
+        </a>
+      </div>
+
+      <div class="project-card glass-card" data-category="python" data-aos="fade-up" data-aos-delay="250">
+        <div class="pc-top">
+          <div class="pc-icon"><i class="fa-brands fa-python"></i></div>
+          <div class="pc-links">
+            <a href="https://github.com/MuhammadAliRaza-DevSecOps/task-of-datatypes-" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <h3 class="pc-title">Task of Datatypes</h3>
+        <p class="pc-desc">A comprehensive Python project exploring data types, structures, and type manipulation — serving as a strong programming fundamentals reference and educational resource.</p>
+        <div class="pc-tags">
+          <span>Python</span><span>Fundamentals</span><span>Education</span>
+        </div>
+        <a href="https://github.com/MuhammadAliRaza-DevSecOps/task-of-datatypes-" target="_blank" class="pc-btn">
+          <i class="fa-brands fa-github"></i> View on GitHub
+        </a>
+      </div>
+
+      <div class="project-card glass-card" data-category="python" data-aos="fade-up" data-aos-delay="300">
+        <div class="pc-top">
+          <div class="pc-icon"><i class="fa-solid fa-code"></i></div>
+          <div class="pc-links">
+            <a href="https://github.com/MuhammadAliRaza-DevSecOps/Programing-task" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <h3 class="pc-title">Programming Task</h3>
+        <p class="pc-desc">Structured programming exercises covering algorithms, logic building, and problem-solving patterns — reflecting strong computational thinking and code quality practices.</p>
+        <div class="pc-tags">
+          <span>Python</span><span>Algorithms</span><span>Logic</span>
+        </div>
+        <a href="https://github.com/MuhammadAliRaza-DevSecOps/Programing-task" target="_blank" class="pc-btn">
+          <i class="fa-brands fa-github"></i> View on GitHub
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TIMELINE ==================== -->
+<section class="section timeline-section" id="timeline">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">// 04. journey</span>
+      <h2 class="section-title">My <span class="accent">Journey</span></h2>
+      <div class="title-line"></div>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-line"></div>
+
+      <div class="tl-item tl-left" data-aos="fade-right" data-aos-delay="100">
+        <div class="tl-content glass-card">
+          <div class="tl-icon"><i class="fa-solid fa-code"></i></div>
+          <span class="tl-phase">Phase 01</span>
+          <h3>Programming Fundamentals</h3>
+          <p>Started with C and C++, mastered data types, logic, loops, and OOP principles — the bedrock of my engineering journey.</p>
+        </div>
+        <div class="tl-dot"></div>
+      </div>
+
+      <div class="tl-item tl-right" data-aos="fade-left" data-aos-delay="150">
+        <div class="tl-content glass-card">
+          <div class="tl-icon"><i class="fa-brands fa-html5"></i></div>
+          <span class="tl-phase">Phase 02</span>
+          <h3>Web Development</h3>
+          <p>Built full-stack applications with HTML, CSS, JavaScript, Node.js, MongoDB, and later Python with Django for robust backend systems.</p>
+        </div>
+        <div class="tl-dot"></div>
+      </div>
+
+      <div class="tl-item tl-left" data-aos="fade-right" data-aos-delay="200">
+        <div class="tl-content glass-card">
+          <div class="tl-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <span class="tl-phase">Phase 03</span>
+          <h3>Security Interest</h3>
+          <p>Discovered cybersecurity through ethical hacking labs on TryHackMe and Hack The Box — learned threat modeling, penetration testing, and secure coding.</p>
+        </div>
+        <div class="tl-dot"></div>
+      </div>
+
+      <div class="tl-item tl-right" data-aos="fade-left" data-aos-delay="250">
+        <div class="tl-content glass-card">
+          <div class="tl-icon"><i class="fa-brands fa-docker"></i></div>
+          <span class="tl-phase">Phase 04</span>
+          <h3>DevSecOps & Cloud</h3>
+          <p>Containerized applications with Docker and Kubernetes, deployed on AWS, automated pipelines, and integrated security throughout CI/CD workflows.</p>
+        </div>
+        <div class="tl-dot"></div>
+      </div>
+
+      <div class="tl-item tl-left" data-aos="fade-right" data-aos-delay="300">
+        <div class="tl-content glass-card">
+          <div class="tl-icon"><i class="fa-solid fa-rocket"></i></div>
+          <span class="tl-phase">Phase 05</span>
+          <h3>Professional Growth</h3>
+          <p>Building a professional presence, targeting Google, Microsoft, Amazon. Pursuing advanced certifications and contributing to real-world DevSecOps projects.</p>
+        </div>
+        <div class="tl-dot"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== EDUCATION ==================== -->
+<section class="section education-section" id="education">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">// 05. education</span>
+      <h2 class="section-title">Academic <span class="accent">Background</span></h2>
+      <div class="title-line"></div>
+    </div>
+
+    <div class="edu-grid">
+      <div class="edu-card glass-card featured-edu" data-aos="zoom-in" data-aos-delay="100">
+        <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div class="edu-badge">Current</div>
+        <h3>BS Computer Science</h3>
+        <h4>NCBA&E — National College of Business Administration & Economics</h4>
+        <p>Lahore, Pakistan</p>
+        <div class="edu-cgpa">
+          <span class="cgpa-label">CGPA</span>
+          <span class="cgpa-value">3.85 / 4.00</span>
+        </div>
+        <div class="edu-focus">
+          <span>DevSecOps</span>
+          <span>Cybersecurity</span>
+          <span>Cloud</span>
+          <span>Networking</span>
+        </div>
+      </div>
+
+      <div class="edu-card glass-card" data-aos="zoom-in" data-aos-delay="200">
+        <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+        <h3>Intermediate (FSc / ICS)</h3>
+        <h4>Board of Intermediate Education</h4>
+        <p>Pakistan</p>
+        <div class="edu-focus">
+          <span>Science</span>
+          <span>Mathematics</span>
+        </div>
+      </div>
+
+      <div class="edu-card glass-card" data-aos="zoom-in" data-aos-delay="300">
+        <div class="edu-icon"><i class="fa-solid fa-book-open"></i></div>
+        <h3>Matriculation (SSC)</h3>
+        <h4>Board of Secondary Education</h4>
+        <p>Pakistan</p>
+        <div class="edu-focus">
+          <span>Science</span>
+          <span>Computer</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CERTIFICATIONS ==================== -->
+<section class="section certs-section" id="certifications">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">// 06. certifications</span>
+      <h2 class="section-title">Professional <span class="accent">Certifications</span></h2>
+      <div class="title-line"></div>
+    </div>
+
+    <div class="certs-grid">
+      <div class="cert-card glass-card" data-aos="flip-left" data-aos-delay="100">
+        <div class="cert-glow-bar"></div>
+        <div class="cert-icon"><i class="fa-solid fa-user-secret"></i></div>
+        <h3>Ethical Hacking & Cybersecurity</h3>
+        <p>Penetration testing methodologies, vulnerability assessment, and ethical hacking practices.</p>
+        <div class="cert-badge"><i class="fa-solid fa-certificate"></i> Verified</div>
+      </div>
+
+      <div class="cert-card glass-card" data-aos="flip-left" data-aos-delay="150">
+        <div class="cert-glow-bar"></div>
+        <div class="cert-icon"><i class="fa-solid fa-robot"></i></div>
+        <h3>AI Chatbot Development</h3>
+        <p>Designing and deploying intelligent conversational AI systems with modern NLP frameworks.</p>
+        <div class="cert-badge"><i class="fa-solid fa-certificate"></i> Verified</div>
+      </div>
+
+      <div class="cert-card glass-card" data-aos="flip-left" data-aos-delay="200">
+        <div class="cert-glow-bar"></div>
+        <div class="cert-icon"><i class="fa-brands fa-python"></i></div>
+        <h3>Python Programming</h3>
+        <p>Advanced Python for automation, scripting, data manipulation, and backend development.</p>
+        <div class="cert-badge"><i class="fa-solid fa-certificate"></i> Verified</div>
+      </div>
+
+      <div class="cert-card glass-card" data-aos="flip-left" data-aos-delay="250">
+        <div class="cert-glow-bar"></div>
+        <div class="cert-icon"><i class="fa-brands fa-linux"></i></div>
+        <h3>Linux & DevOps Fundamentals</h3>
+        <p>Linux system administration, shell scripting, CI/CD pipelines, and DevOps best practices.</p>
+        <div class="cert-badge"><i class="fa-solid fa-certificate"></i> Verified</div>
+      </div>
+
+      <div class="cert-card glass-card" data-aos="flip-left" data-aos-delay="300">
+        <div class="cert-glow-bar"></div>
+        <div class="cert-icon"><i class="fa-solid fa-cloud"></i></div>
+        <h3>Cloud & Automation</h3>
+        <p>AWS cloud architecture, serverless computing, infrastructure-as-code, and automation workflows.</p>
+        <div class="cert-badge"><i class="fa-solid fa-certificate"></i> Verified</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CV SECTION ==================== -->
+<section class="section cv-section" id="cv">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">// 07. resume</span>
+      <h2 class="section-title">Curriculum <span class="accent">Vitae</span></h2>
+      <div class="title-line"></div>
+    </div>
+
+    <div class="cv-wrapper" data-aos="zoom-in" data-aos-delay="100">
+      <div class="cv-card glass-card">
+        <div class="cv-left">
+          <div class="cv-icon-wrap">
+            <i class="fa-solid fa-file-pdf"></i>
+            <div class="cv-pulse"></div>
+          </div>
+          <h3>Ali Raza — Resume</h3>
+          <p>DevSecOps Engineer | Cybersecurity | Cloud & Automation</p>
+          <p class="cv-note"><i class="fa-solid fa-circle-info"></i> Available for recruiters at top global companies including Google, Microsoft, Amazon, and international DevSecOps / Cloud roles.</p>
+          <div class="cv-meta">
+            <span><i class="fa-solid fa-file-lines"></i> resume.pdf</span>
+            <span><i class="fa-solid fa-location-dot"></i> Lahore, Pakistan</span>
+          </div>
+        </div>
+        <div class="cv-right">
+          <div class="cv-actions">
+            <a href="assets/resume.pdf" target="_blank" class="btn btn-primary cv-btn">
+              <i class="fa-solid fa-eye"></i> View CV
+            </a>
+            <a href="assets/resume.pdf" download="AliRaza_Resume.pdf" class="btn btn-glass cv-btn">
+              <i class="fa-solid fa-download"></i> Download CV
+            </a>
+          </div>
+          <div class="cv-upload-area" id="cvUploadArea">
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+            <p>Admin Upload Area</p>
+            <span>Drop resume.pdf here or click to update</span>
+            <input type="file" id="cvFileInput" accept=".pdf" style="display:none;"/>
+          </div>
+          <p class="cv-hint">Place your <code>resume.pdf</code> in the <code>assets/</code> folder for the View & Download buttons to work.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PLATFORMS ==================== -->
+<section class="section platforms-section" id="platforms">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">// 08. platforms</span>
+      <h2 class="section-title">Professional <span class="accent">Platforms</span></h2>
+      <div class="title-line"></div>
+    </div>
+
+    <div class="platforms-grid">
+      <a href="https://www.linkedin.com/in/ali-raza-0b9b52228" target="_blank" class="platform-card glass-card" data-aos="fade-up" data-aos-delay="50">
+        <div class="pl-icon linkedin"><i class="fa-brands fa-linkedin"></i></div>
+        <h4>LinkedIn</h4>
+        <p>Professional network, career opportunities & industry connections</p>
+        <span class="pl-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+      </a>
+
+      <a href="https://github.com/MuhammadAliRaza-DevSecOps" target="_blank" class="platform-card glass-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="pl-icon github"><i class="fa-brands fa-github"></i></div>
+        <h4>GitHub</h4>
+        <p>Open-source projects, code repositories & version control</p>
+        <span class="pl-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+      </a>
+
+      <a href="https://www.upwork.com" target="_blank" class="platform-card glass-card" data-aos="fade-up" data-aos-delay="150">
+        <div class="pl-icon upwork"><i class="fa-solid fa-briefcase"></i></div>
+        <h4>Upwork</h4>
+        <p>Freelance DevSecOps, security consulting & cloud projects</p>
+        <span class="pl-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+      </a>
+
+      <a href="https://www.freelancer.com" target="_blank" class="platform-card glass-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="pl-icon freelancer"><i class="fa-solid fa-laptop-code"></i></div>
+        <h4>Freelancer</h4>
+        <p>Remote freelancing for technical development and security audits</p>
+        <span class="pl-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+      </a>
+
+      <a href="https://www.fiverr.com" target="_blank" class="platform-card glass-card" data-aos="fade-up" data-aos-delay="250">
+        <div class="pl-icon fiverr"><i class="fa-solid fa-star"></i></div>
+        <h4>Fiverr</h4>
+        <p>Micro-service offerings in scripting, automation & security tools</p>
+        <span class="pl-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+      </a>
+
+      <a href="https://dev.to" target="_blank" class="platform-card glass-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="pl-icon devto"><i class="fa-solid fa-pen-nib"></i></div>
+        <h4>Dev.to / Medium</h4>
+        <p>Technical writing on DevSecOps, cloud security & automation</p>
+        <span class="pl-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+      </a>
+
+      <a href="https://tryhackme.com" target="_blank" class="platform-card glass-card" data-aos="fade-up" data-aos-delay="350">
+        <div class="pl-icon tryhackme"><i class="fa-solid fa-crosshairs"></i></div>
+        <h4>TryHackMe</h4>
+        <p>Hands-on cybersecurity challenges, CTF competitions & learning paths</p>
+        <span class="pl-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+      </a>
+
+      <a href="https://www.hackthebox.com" target="_blank" class="platform-card glass-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="pl-icon htb"><i class="fa-solid fa-terminal"></i></div>
+        <h4>Hack The Box</h4>
+        <p>Advanced penetration testing labs and real-world attack simulation</p>
+        <span class="pl-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+      </a>
+
+      <a href="https://www.kaggle.com" target="_blank" class="platform-card glass-card" data-aos="fade-up" data-aos-delay="450">
+        <div class="pl-icon kaggle"><i class="fa-solid fa-chart-line"></i></div>
+        <h4>Kaggle</h4>
+        <p>Data science competitions and ML exploration for security analytics</p>
+        <span class="pl-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CONTACT ==================== -->
+<section class="section contact-section" id="contact">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">// 09. contact</span>
+      <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+      <div class="title-line"></div>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+        <p class="contact-intro">Ready to collaborate, discuss opportunities, or just connect? I'm always open to interesting conversations about DevSecOps, cloud security, or building the next big thing.</p>
+
+        <div class="contact-items">
+          <a href="mailto:infoman55.it@gmail.com" class="contact-item glass-card">
+            <div class="ci-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <span>Email</span>
+              <strong>infoman55.it@gmail.com</strong>
+            </div>
+          </a>
+          <a href="https://github.com/MuhammadAliRaza-DevSecOps" target="_blank" class="contact-item glass-card">
+            <div class="ci-icon"><i class="fa-brands fa-github"></i></div>
+            <div>
+              <span>GitHub</span>
+              <strong>MuhammadAliRaza-DevSecOps</strong>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/ali-raza-0b9b52228" target="_blank" class="contact-item glass-card">
+            <div class="ci-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div>
+              <span>LinkedIn</span>
+              <strong>ali-raza-0b9b52228</strong>
+            </div>
+          </a>
+          <div class="contact-item glass-card">
+            <div class="ci-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <span>Location</span>
+              <strong>Lahore, Pakistan</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap" data-aos="fade-left" data-aos-delay="200">
+        <div class="glass-card contact-form-card">
+          <h3>Send a Message</h3>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" required/>
+              <span class="form-border"></span>
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Your Email" required/>
+              <span class="form-border"></span>
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Subject"/>
+              <span class="form-border"></span>
+            </div>
+            <div class="form-group">
+              <textarea rows="4" placeholder="Your Message" required></textarea>
+              <span class="form-border"></span>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand-bracket">&lt;</span>
+        <span class="brand-name">Ali<span class="brand-accent">Raza</span></span>
+        <span class="brand-bracket">/&gt;</span>
+      </div>
+      <p>DevSecOps Engineer | Cybersecurity | Cloud & Automation</p>
+      <div class="footer-socials">
+        <a href="https://github.com/MuhammadAliRaza-DevSecOps" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ali-raza-0b9b52228" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:infoman55.it@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <p class="footer-copy">© 2025 Ali Raza · Built with passion for secure, scalable systems.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ==================== AI CHATBOT ==================== -->
+<div class="chatbot-widget" id="chatbotWidget">
+  <button class="chatbot-toggle" id="chatbotToggle" title="Chat with Ali's AI Assistant">
+    <i class="fa-solid fa-robot" id="chatbotIcon"></i>
+    <div class="chatbot-pulse"></div>
+  </button>
+  <div class="chatbot-panel glass-card" id="chatbotPanel">
+    <div class="chatbot-header">
+      <div class="bot-avatar"><i class="fa-solid fa-robot"></i></div>
+      <div>
+        <h4>Ali's AI Assistant</h4>
+        <span class="bot-status"><span class="status-dot"></span>Online</span>
+      </div>
+      <button class="chatbot-close" id="chatbotClose"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="chatbot-messages" id="chatbotMessages">
+      <div class="bot-msg">
+        <div class="msg-bubble">Hey there! 👋 I'm Ali's AI assistant. Ask me about his <strong>skills, projects, education, certifications, or contact info</strong>!</div>
+      </div>
+      <div class="quick-btns">
+        <button class="quick-btn" data-q="skills">Skills</button>
+        <button class="quick-btn" data-q="projects">Projects</button>
+        <button class="quick-btn" data-q="education">Education</button>
+        <button class="quick-btn" data-q="contact">Contact</button>
+        <button class="quick-btn" data-q="github">GitHub</button>
+        <button class="quick-btn" data-q="certificates">Certs</button>
+      </div>
+    </div>
+    <div class="chatbot-input-wrap">
+      <input type="text" id="chatbotInput" placeholder="Ask me anything..."/>
+      <button id="chatbotSend"><i class="fa-solid fa-paper-plane"></i></button>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== SCRIPTS ==================== -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
